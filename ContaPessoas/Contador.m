@@ -15,6 +15,15 @@
     int girl;
 }
 
++ (Contador *)contGlobal{
+    static Contador *contGlobal = nil;
+    
+    if (!contGlobal){
+        contGlobal = [[Contador alloc] init];
+    }
+    return contGlobal;
+}
+
 -(id)init {
     self = [super init];
     if (self) {
@@ -37,6 +46,10 @@
 
 -(int)getGirls {
     return girl;
+}
+
+-(int)getTotal{
+    return boy + girl;
 }
 
 

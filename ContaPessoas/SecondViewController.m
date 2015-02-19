@@ -8,10 +8,10 @@
 
 #import "SecondViewController.h"
 #import "Contador.h"
+#import "FirstViewController.h"
 
-@interface SecondViewController () {
-      Contador *contador;
-}
+@interface SecondViewController ()
+
 
 @end
 
@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    contador = [[Contador alloc] init];
+    contador = [Contador contGlobal];
 }
 
 
@@ -32,7 +32,7 @@
 - (IBAction)click:(id)sender {
     _totalBoys.text = [NSString stringWithFormat: @"%d", [contador getBoys]];
     _totalGirls.text = [NSString stringWithFormat: @"%d", [contador getGirls]];
-    _total.text = [NSString stringWithFormat:@"%d", [contador getGirls] + [contador getBoys] ];
+    _total.text = [NSString stringWithFormat:@"%d", [contador getTotal] ];
 }
 
 

@@ -10,18 +10,18 @@
 
 #import "FirstViewController.h"
 #import "Contador.h"
+#import "SecondViewController.h"
 
 @interface FirstViewController ()
 
 @end
 
-@implementation FirstViewController {
-    Contador *contador;
-}
+@implementation FirstViewController 
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    contador = [[Contador alloc] init];
+    contador = [Contador contGlobal];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
