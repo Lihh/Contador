@@ -2,8 +2,10 @@
 //  FirstViewController.m
 //  ContaPessoas
 //
-//  Created by Vinicius Miana on 2/18/15.
-//  Copyright (c) 2015 Vinicius Miana. All rights reserved.
+//  Created by Lidia Chou on 2/18/15.
+//  Copyright (c) 2015 Lidia Chou. All rights reserved.
+//
+//
 //
 
 #import "FirstViewController.h"
