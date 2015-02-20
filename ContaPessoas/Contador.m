@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Contador.h"
+#import "SecondViewController.h"
 
 
 @implementation Contador {
