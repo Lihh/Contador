@@ -18,5 +18,7 @@
 
 -(int)getTotal;
 
+@property (nonatomic, weak) id mostrar;
+
 @end
 
